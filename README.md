@@ -43,4 +43,9 @@
 
 IFK python template for future python projects.
 
-## Set-up
+## Configuration
+
+When you start a new project, apart from the obvious changes,
+there are some details to consider.
+
+- Build workflow, follow the guide in [dynamic badges](https://github.com/Schneegans/dynamic-badges-action).
