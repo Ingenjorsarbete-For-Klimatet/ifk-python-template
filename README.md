@@ -5,7 +5,7 @@
         <img src="https://github.com/Ingenjorsarbete-For-Klimatet/ifk-python-template/actions/workflows/github-action-build.yaml/badge.svg?branch=main" alt="build" style="max-width: 100%;">
     </a>
     <a href="https://github.com/Ingenjorsarbete-For-Klimatet/ifk-python-template/actions/workflows/github-action-build.yaml">
-        <img src="https://img.shields.io/endpoint?logo=github&labelColor=%23333a41&logoColor=%23959da5&url=<https://gist.githubusercontent.com/mgcth/955d89d05ed9ca61fb3774bc68bbae33/raw/ifk-python-template-coverage-badge.json>" alt="coverage" style="max-width: 100%;">
+        <img src="https://img.shields.io/endpoint?logo=github&labelColor=%23333a41&logoColor=%23959da5&url=https://gist.githubusercontent.com/mgcth/955d89d05ed9ca61fb3774bc68bbae33/raw/ifk-python-template-coverage-badge.json" alt="coverage" style="max-width: 100%;">
     </a>
     <a href="https://github.com/Ingenjorsarbete-For-Klimatet/ifk-python-template/actions/workflows/github-action-docs.yaml">
         <img src="https://github.com/Ingenjorsarbete-For-Klimatet/ifk-python-template/actions/workflows/github-action-docs.yaml/badge.svg?branch=main" alt="docs" style="max-width: 100%;">
@@ -49,3 +49,6 @@ When you start a new project, apart from the obvious changes,
 there are some details to consider.
 
 - Build workflow, follow the guide in [dynamic badges](https://github.com/Schneegans/dynamic-badges-action).
+- To build docs, change `branch` in `github/workflows/github-action-docs.yaml`
+from `["SET_TO_MAIN"]` to `["main"]`. You also need to activate Pages under repo
+Settings/Pages.
