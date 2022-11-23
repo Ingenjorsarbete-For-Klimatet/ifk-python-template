@@ -2,4 +2,5 @@
 
 
 def temp():
+    """Temporary function."""
     return True
