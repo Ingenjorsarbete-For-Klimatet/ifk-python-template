@@ -15,6 +15,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Recopy
         run: |
+          pip install copier
           copier recopy $project --force
       - name: Install dependencies
         run: |
