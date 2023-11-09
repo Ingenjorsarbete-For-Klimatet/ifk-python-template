@@ -1,6 +1,6 @@
 # Changes here will be overwritten by Copier
-_commit: ee178e4
-_src_path: https://github.com/Ingenjorsarbete-For-Klimatet/ifk-python-template.git
+_commit: fbe5ab3
+_src_path: https://github.com/Ingenjorsarbete-For-Klimatet/ifk-python-template.git@hotfix/copier
 author: IFK
 email: info@ingenjorsarbeteforklimatet.se
 module_name: test
