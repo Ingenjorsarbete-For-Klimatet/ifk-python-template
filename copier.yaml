@@ -1,0 +1,27 @@
+project_name:
+    type: str
+    help: What is your project name (typically root folder name)?
+    default: ifk-
+
+package_name:
+    type: str
+    help: What is your package name (typically folder in src)?
+
+module_name:
+    type: str
+    help: What is your Python module name (typically file in package)?
+
+project_description:
+    type: str
+    help: What is your Python project description?
+    default: Unspecified.
+
+author:
+    type: str
+    help: What is your name?
+    default: IFK
+
+email:
+    type: str
+    help: What is your email?
+    default: info@ingenjorsarbeteforklimatet.se
