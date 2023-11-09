@@ -3,13 +3,13 @@ requires = ["setuptools", "setuptools-scm"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "ifk-python-template"
+name = "{{project_name}}"
 version = "0.1.0"
-description = "IFK python template."
+description = "{{ project_description }}"
 license = { text = "MIT" }
 readme = "README.md"
 authors = [
-    { name = "Mladen Gibanica", email = "11275336+mgcth@users.noreply.github.com" },
+    { name = "{{author}}", email = "{{email}}" },
 ]
 requires-python = ">=3.9"
 dependencies = []
@@ -26,10 +26,10 @@ doc = [
     "mkdocstrings[python] ~= 0.19",
 ]
 dev = [
-    "ifk-python-template[lint]",
-    "ifk-python-template[type]",
-    "ifk-python-template[test]",
-    "ifk-python-template[doc]",
+    "{{project_name}}[lint]",
+    "{{project_name}}[type]",
+    "{{project_name}}[test]",
+    "{{project_name}}[doc]",
     "pre-commit ~= 2.20",
 ]
 
