@@ -16,6 +16,7 @@ dependencies = []
 
 [project.optional-dependencies]
 lint = [
+    "ruff ~= 0.1",
     "flake8 ~= 5.0",
     "flake8-bandit ~= 4.1",
     "flake8-docstrings ~= 1.6",
