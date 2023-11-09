@@ -3,13 +3,13 @@ requires = ["setuptools", "setuptools-scm"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "ifk-python-template"
+name = "{{project_name}}"
 version = "0.1.0"
-description = "IFK python template."
+description = "{{ project_description }}"
 license = { text = "MIT" }
 readme = "README.md"
 authors = [
-    { name = "Mladen Gibanica", email = "11275336+mgcth@users.noreply.github.com" },
+    { name = "{{author}}", email = "{{email}}" },
 ]
 requires-python = ">=3.9"
 dependencies = []
@@ -17,10 +17,6 @@ dependencies = []
 [project.optional-dependencies]
 lint = [
     "ruff ~= 0.1",
-    "flake8 ~= 5.0",
-    "flake8-bandit ~= 4.1",
-    "flake8-docstrings ~= 1.6",
-    "flake8-black ~= 0.3",
 ]
 type = ["mypy ~= 0.990", "types-requests ~= 2.28", "pandas-stubs ~= 1.5"]
 test = ["pytest ~= 7.1", "coverage ~= 6.5", "pytest-cov ~= 4.0"]
@@ -30,14 +26,22 @@ doc = [
     "mkdocstrings[python] ~= 0.19",
 ]
 dev = [
-    "ifk-python-template[lint]",
-    "ifk-python-template[type]",
-    "ifk-python-template[test]",
-    "ifk-python-template[doc]",
-    "black ~= 22.8",
+    "{{project_name}}[lint]",
+    "{{project_name}}[type]",
+    "{{project_name}}[test]",
+    "{{project_name}}[doc]",
     "pre-commit ~= 2.20",
 ]
 
 [tool.setuptools.packages.find]
 where = ["src"]
 exclude = ["material"]
+
+[tool.ruff]
+line-length = 88
+extend-include = ["*.ipynb"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "W", "F", "B", "D", "I", "S"]
+ignore = ["S101"]
+unfixable = ["B", "S"]
