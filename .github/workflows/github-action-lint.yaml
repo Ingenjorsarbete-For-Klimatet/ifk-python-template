@@ -23,4 +23,4 @@ jobs:
           pip install -e ".[lint]"
       - name: Lint with flake8
         run: |
-          ruff check src tests --show-source --statistics
+          ruff check src tests
