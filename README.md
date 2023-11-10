@@ -26,7 +26,7 @@
         <img src="https://img.shields.io/badge/Testing_framework-pytest-a04000" alt="Testing framework: pytest" style="max-width: 100%;">
     </a>
     <a href="https://github.com/astral-sh/ruff">
-        <img src="https://img.shields.io/badge/Linter-ruff-black" alt="Linter and formatter: ruff" style="max-width: 100%;">
+        <img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json" alt="Linter and formatter: ruff" style="max-width: 100%;">
     </a>
     <a href="http://mypy-lang.org">
         <img src="https://img.shields.io/badge/Type_checker-mypy-1674b1" alt="Type checker: mypy" style="max-width: 100%;">
