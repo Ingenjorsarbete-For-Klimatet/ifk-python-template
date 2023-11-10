@@ -1,3 +1,4 @@
+{% raw %}
 name: Type
 on: [push]
 jobs:
@@ -25,3 +26,4 @@ jobs:
           --explicit-package-bases
           --allow-redefinition
           src
+{% endraw %}

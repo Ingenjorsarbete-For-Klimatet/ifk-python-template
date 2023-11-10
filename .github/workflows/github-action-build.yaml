@@ -1,3 +1,4 @@
+{% raw %}
 name: Build
 on: [push]
 jobs:
@@ -29,8 +30,9 @@ jobs:
         uses: schneegans/dynamic-badges-action@v1.6.0
         with:
           auth: ${{ secrets.BADGE_SECRET }}
-          gistID: 955d89d05ed9ca61fb3774bc68bbae33
-          filename: ifk-python-template-coverage-badge.json
+{% endraw %}
+          gistID: {{badge_gistid}}
+          filename: {{project_name}}-coverage-badge.json
           label: Coverage
           message: ${{ env.total }}%
           minColorRange: 50
