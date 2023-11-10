@@ -1,5 +1,4 @@
-{% raw %}
-name: Build
+{% raw %}name: Build
 on: [push]
 jobs:
   build:
@@ -29,12 +28,11 @@ jobs:
       - name: Coverage badge
         uses: schneegans/dynamic-badges-action@v1.6.0
         with:
-          auth: ${{ secrets.BADGE_SECRET }}
-{% endraw %}
+          auth: ${{ secrets.BADGE_SECRET }}{% endraw %}
           gistID: {{badge_gistid}}
           filename: {{project_name}}-coverage-badge.json
-          label: Coverage
+          {% raw %}label: Coverage
           message: ${{ env.total }}%
           minColorRange: 50
           maxColorRange: 90
-          valColorRange: ${{ env.total }}
+          valColorRange: ${{ env.total }}{% endraw %}
