@@ -1,4 +1,4 @@
-name: Type
+{% raw %}name: Type
 on: [push]
 jobs:
   type:
@@ -13,10 +13,6 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python-version }}
-      - name: Recopy
-        run: |
-          pip install copier
-          copier recopy $project --force
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
@@ -28,4 +24,4 @@ jobs:
           --namespace-packages
           --explicit-package-bases
           --allow-redefinition
-          src
+          src{% endraw %}

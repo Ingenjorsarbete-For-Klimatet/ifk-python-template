@@ -1,21 +1,6 @@
 <h1 align="center">ifk-python-template</h1>
 
 <p align="center">
-    <a href="https://github.com/Ingenjorsarbete-For-Klimatet/ifk-python-template/actions/workflows/github-action-build.yaml">
-        <img src="https://github.com/Ingenjorsarbete-For-Klimatet/ifk-python-template/actions/workflows/github-action-build.yaml/badge.svg?branch=main" alt="build" style="max-width: 100%;">
-    </a>
-    <a href="https://github.com/Ingenjorsarbete-For-Klimatet/ifk-python-template/actions/workflows/github-action-build.yaml">
-        <img src="https://img.shields.io/endpoint?logo=github&labelColor=%23333a41&logoColor=%23959da5&url=https://gist.githubusercontent.com/mgcth/955d89d05ed9ca61fb3774bc68bbae33/raw/ifk-python-template-coverage-badge.json" alt="coverage" style="max-width: 100%;">
-    </a>
-    <a href="https://github.com/Ingenjorsarbete-For-Klimatet/ifk-python-template/actions/workflows/github-action-lint.yaml">
-        <img src="https://github.com/Ingenjorsarbete-For-Klimatet/ifk-python-template/actions/workflows/github-action-lint.yaml/badge.svg?branch=main" alt="lint" style="max-width: 100%;">
-    </a>
-    <a href="https://github.com/Ingenjorsarbete-For-Klimatet/ifk-python-template/actions/workflows/github-action-type.yaml">
-        <img src="https://github.com/Ingenjorsarbete-For-Klimatet/ifk-python-template/actions/workflows/github-action-type.yaml/badge.svg?branch=main" alt="type" style="max-width: 100%;">
-    </a>
-</p>
-
-<p align="center">
     <a href="https://www.python.org">
         <img src="https://img.shields.io/badge/Python-3.9%20|%203.10%20|%203.11%20|%203.12-blue" alt="Python: 3.9 - 3.12" style="max-width: 100%;">
     </a>

@@ -25,3 +25,7 @@ email:
     type: str
     help: What is your email?
     default: info@ingenjorsarbeteforklimatet.se
+
+badge_gistid:
+    type: str
+    help: Do you have a gist id already? Leave empty if not.

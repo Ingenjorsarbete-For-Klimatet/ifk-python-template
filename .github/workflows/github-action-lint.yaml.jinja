@@ -1,4 +1,4 @@
-name: Lint
+{% raw %}name: Lint
 on: [push]
 jobs:
   lint:
@@ -13,10 +13,6 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python-version }}
-      - name: Recopy
-        run: |
-          pip install copier
-          copier recopy $project --force
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
@@ -26,4 +22,4 @@ jobs:
           ruff check --output-format=github src tests
       - name: Format with ruff
         run: |
-          ruff format --check src tests
+          ruff format --check src tests{% endraw %}
