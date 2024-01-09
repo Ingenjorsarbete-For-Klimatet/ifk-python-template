@@ -43,4 +43,4 @@ copier copy https://github.com/Ingenjorsarbete-For-Klimatet/ifk-python-template.
 Copier supports updating projects based on templates when the template updates.
 See <a href="https://copier.readthedocs.io/en/stable/" taget="_blank">copier docs</a>.
 - Publish toi PyPi workflow requires you to use the
-[Trusted Publisher Management](https://pypi.org/manage/account/publishing/){target="_blank"} in PyPi.
+- <a href="https://pypi.org/manage/account/publishing/" target="_blank">Trusted Publisher Management]</a> in PyPi.
