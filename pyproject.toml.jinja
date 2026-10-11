@@ -7,27 +7,27 @@ readme = "README.md"
 authors = [
     { name = "{{author}}", email = "{{email}}" },
 ]
-requires-python = ">=3.9"
+requires-python = ">=3.11"
 dependencies = []
 
 [dependency-groups]
 lint = [
-    "ruff >= 0.11",
+    "ruff >= 0.17",
 ]
-type = ["mypy >= 1.15"]
-test = ["pytest >= 8.3", "coverage >= 7.7", "pytest-cov ~= 6.0"]
+type = ["mypy >= 2.4"]
+test = ["pytest >= 9.1", "coverage >= 7.16", "pytest-cov ~= 7.1"]
 doc = [
-    "mkdocs == 1.4.3",
-    "mkdocs-material == 8.5.11",
-    "mkdocstrings[python] == 0.19.1",
+    "mkdocs == 1.6.1",
+    "mkdocs-material == 9.7.7",
+    "mkdocstrings[python] == 1.0.7",
 ]
 dev = [
     {include-group = "lint"},
     {include-group = "type"},
     {include-group = "test"},
     {include-group = "doc"},
-    "pre-commit >= 4.2",
-    "ipykernel >= 6.29",
+    "pre-commit >= 4.6",
+    "ipykernel >= 7.4",
 ]
 
 [tool.setuptools.packages.find]
